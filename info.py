@@ -24,7 +24,7 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 PICS = (environ.get('PICS', '')).split()
 NOR_IMG = environ.get("NOR_IMG", "")
 NEWGRP = environ.get("NEWGRP", "")
-MELCOW_VID = environ.get("MELCOW_VID", "https://telegra.ph/file/f7f2a532fe4b990044507.mp4")
+MELCOW_VID = environ.get("MELCOW_VID", "")
 SPELL_IMG = environ.get("SPELL_IMG", "")
 SP = (environ.get('SP', '')).split()
 
