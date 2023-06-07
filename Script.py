@@ -240,7 +240,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
 🔰<a href='https://t.me/+8vZTQtzo0lBmNDY9'>✥ ▷ Support ɢʀᴏᴜᴩ ◁</a>
 
-🔰<a href='https://t.me/+e_UqPGvuQ5E5NGU1'>✥ ▷ ᴍᴏᴠɪᴇ ʀᴇ𝚀ᴜᴇꜱᴛ ɢʀᴏᴜᴩ ◁</a>
+🔰<a href='https://t.me/+xuX7Jr_KqGszZGE11'>✥ ▷ ᴍᴏᴠɪᴇ ʀᴇ𝚀ᴜᴇꜱᴛ ɢʀᴏᴜᴩ ◁</a>
 
 
 🌿ᴍᴀɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/maharaja_91'>ʀᴀᴊᴀ ᠰ TɢX</a></b>"""
