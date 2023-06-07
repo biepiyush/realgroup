@@ -63,7 +63,7 @@ async def save_group(bot, message):
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
                                                                              InlineKeyboardButton('⚡sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ⚡', url='https://t.me/+8vZTQtzo0lBmNDY9'),
-                                                                             nlineKeyboardButton('⚡CHANNEL⚡', url='https://t.me/+e_UqPGvuQ5E5NGU1')
+                                                                             InlineKeyboardButton('⚡CHANNEL⚡', url='https://t.me/+e_UqPGvuQ5E5NGU1')
                                                                         ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
