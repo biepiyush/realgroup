@@ -228,24 +228,7 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     LOGO = """BOT STARTED.......🥵"""
     
-    EARN_TXT = """
-<b>──────「 <a href='https://t.me/kinzanoufal'>𝐊𝐢𝐧𝐳𝐚𝐧𝐨𝐮𝐟𝐚𝐥</a> 」─────
-
-Now You can start earning 💸 money today with our Simple and easy-to-use bot!
-
-›› Step 1: Add This bot to your group as an admin..
-
-›› Step 2: If you don't Using any shortner website then make account first on shorturllink.in (You can also use other link shortner website).
-
-›› Step 3: Copy your API from website and then, simply set your website and API Using the
-/set_shortner command
-
-› Like this :  /set_shortner <code>shorturllink.in b4d510e7b1e56da54f43c9e27569ee0a281121db</code>
-
-
-★ This bot will automatically converts links with Your Api and will provide your links.
-
-★ Don't wait any longer to start earning money from your telegram group. Add our bot today and start making money 💰!</b>"""
+    EARN_TXT = """<b></b>"""
     DISC_TXT = """
 <b><code>ᴛʜɪꜱ ɪꜱ ᴀɴ ᴏᴘᴇɴ ꜱᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
