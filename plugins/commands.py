@@ -154,7 +154,11 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                                      [
                                          [
-                                             InlineKeyboardButton('⚠ DELETE', callback_data=close_data)
+                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
+                                         ],
+                                         [
+                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
+                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
                                          ]                            
                                      ]
                                  )
@@ -170,7 +174,11 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                                     [
                                          [
-                                             InlineKeyboardButton('⚠ DELETE', callback_data=close_data)
+                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
+                                         ],
+                                         [
+                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
+                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
                                          ]                            
                                      ]
                                  )
@@ -285,7 +293,11 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                                      [
                                          [
-                                             InlineKeyboardButton('⚠ DELETE', callback_data=close_data)
+                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
+                                         ],
+                                         [
+                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
+                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
                                          ]                            
                                      ]
                                  )
@@ -335,9 +347,13 @@ async def start(client, message):
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
-                                    [
+                                     [
                                          [
-                                             InlineKeyboardButton('⚠ DELETE', callback_data=close_data)
+                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
+                                         ],
+                                         [
+                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
+                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
                                          ]                            
                                      ]
                                  )
