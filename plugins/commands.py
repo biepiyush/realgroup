@@ -150,19 +150,9 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
-                                     [
-                                         [
-                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
-                                         ],
-                                         [
-                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
-                                         ]                            
-                                     ]
-                                 )
-                             )
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data') ] ] ),
+                    protect_content=msg.get('protect', False,
+                )
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
@@ -170,19 +160,11 @@ async def start(client, message):
                     chat_id=message.from_user.id,
                     file_id=msg.get("file_id"),
                     caption=f_caption,
-                    protect_content=msg.get('protect', False),
-                    reply_markup=InlineKeyboardMarkup(
-                                    [
-                                         [
-                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
-                                         ],
-                                         [
-                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
-                                         ]                            
-                                     ]
-                                 )
-                             )
+                    reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data') ] ] ),
+                    protect_content=msg.get('protect', False,
+                )
+         
+                    
             except Exception as e:
                 logger.warning(e, exc_info=True)
                 continue
@@ -289,19 +271,11 @@ async def start(client, message):
             msg = await client.send_cached_media(
                 chat_id=message.from_user.id,
                 file_id=file_id,
-                protect_content=True if pre == 'filep' else False,
-                reply_markup=InlineKeyboardMarkup(
-                                     [
-                                         [
-                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
-                                         ],
-                                         [
-                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
-                                         ]                            
-                                     ]
-                                 )
-                             )
+                reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data') ] ] ),
+                protect_content=msg.get('protect', False,
+                )
+                
+                
             filetype = msg.media
             username = message.from_user.first_name
             file = getattr(msg, filetype.value)
@@ -345,20 +319,10 @@ async def start(client, message):
         chat_id=message.from_user.id,
         file_id=file_id,
         caption=f_caption,
+        reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data') ] ] ),
         protect_content=True if pre == 'filep' else False,
-        reply_markup=InlineKeyboardMarkup(
-                                     [
-                                         [
-                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
-                                         ],
-                                         [
-                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
-                                         ]                            
-                                     ]
-                                 )
-                             )
-    
+        )
+       
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
