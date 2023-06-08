@@ -154,11 +154,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                                      [
                                          [
-                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
-                                         ],
-                                         [
-                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
+                                             InlineKeyboardButton('⚠ DELETE', callback_data=close_data)
                                          ]                            
                                      ]
                                  )
@@ -172,13 +168,9 @@ async def start(client, message):
                     caption=f_caption,
                     protect_content=msg.get('protect', False),
                     reply_markup=InlineKeyboardMarkup(
-                                     [
+                                    [
                                          [
-                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
-                                         ],
-                                         [
-                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
+                                             InlineKeyboardButton('⚠ DELETE', callback_data=close_data)
                                          ]                            
                                      ]
                                  )
@@ -293,11 +285,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                                      [
                                          [
-                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
-                                         ],
-                                         [
-                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
+                                             InlineKeyboardButton('⚠ DELETE', callback_data=close_data)
                                          ]                            
                                      ]
                                  )
@@ -347,22 +335,14 @@ async def start(client, message):
         caption=f_caption,
         protect_content=True if pre == 'filep' else False,
         reply_markup=InlineKeyboardMarkup(
-                                     [
+                                    [
                                          [
-                                             InlineKeyboardButton('1🎁𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬🎁', callback_data=f"{pre}#{file_id}")
-                                         ],
-                                         [
-                                             InlineKeyboardButton('🧩𝐆𝐨𝐨𝐠𝐥𝐞🧩', url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}"),
-                                             InlineKeyboardButton('UPDATES', url="https://t.me/+e_UqPGvuQ5E5NGU1")
+                                             InlineKeyboardButton('⚠ DELETE', callback_data=close_data)
                                          ]                            
                                      ]
                                  )
                              )
-                    
-
-    await message.reply(f"<b><a href='https://t.me/+8vZTQtzo0lBmNDY9'>Thank For Using Me...</a></b>")
     
-
 
 @Client.on_message(filters.command('channel') & filters.user(ADMINS))
 async def channel_info(bot, message):
