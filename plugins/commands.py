@@ -274,7 +274,7 @@ async def start(client, message):
                 chat_id=message.from_user.id,
                 file_id=file_id,
                 reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data') ] ] ),
-                protect_content=msg.get('protect', False,
+                protect_content=msg.get('protect', False),
                 )
                 
                 
