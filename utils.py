@@ -634,13 +634,13 @@ async def send_all(bot, userid, files, ident):
         if f_caption is None:
             f_caption = f"{title}"
         try:
-            await bot.send_cached_media(
+         await bot.send_cached_media(
              chat_id=userid,
              file_id=file.file_id,
              caption=f_caption,
              reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data') ] ] ),
              protect_content=True if ident == "filep" else False),
-          ) 
+             ) 
             
 
         except UserIsBlocked:
