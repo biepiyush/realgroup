@@ -640,7 +640,6 @@ async def send_all(bot, userid, files, ident):
              caption=f_caption,
              reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data') ] ] ),
              protect_content=True if ident == "filep" else False),
-             ) 
             
 
         except UserIsBlocked:
