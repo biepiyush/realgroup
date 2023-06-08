@@ -153,6 +153,8 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data') ] ] ),
                     protect_content=msg.get('protect', False,
                 )
+                    
+                    
             except FloodWait as e:
                 await asyncio.sleep(e.x)
                 logger.warning(f"Floodwait of {e.x} sec.")
