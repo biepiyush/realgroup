@@ -42,7 +42,7 @@ async def nolink(bot,message):
 	try:
                  
                 buttons = [[
-                    InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', url='https://t.me/nasrani_update')
+                    InlineKeyboardButton('sᴜʀᴘʀɪsᴇ', url='https://t.me/+e_UqPGvuQ5E5NGU1')
                 ]]
                 reply_markup = InlineKeyboardMarkup(buttons)
                 k = await message.reply_sticker("CAACAgUAAx0CXPjPGAACAmVkAAHLpxQlUkQIctGPhN_l36xk9psAAlcJAAKTvwlU-kg3cws4x6geBA") 
