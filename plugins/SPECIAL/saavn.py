@@ -8,7 +8,7 @@ import requests,os,wget
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 import asyncio
 from info import LOG_CHANNEL
-BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖🇮🇳✨ Made By ✨🇮🇳💖', url='https://t.me/nasrani_update')]])
+BUTTONS = InlineKeyboardMarkup([[InlineKeyboardButton('💖🇮🇳✨ Made By ✨🇮🇳💖', url='https://t.me/+e_UqPGvuQ5E5NGU1')]])
 A = """{} with user id:- {} used /saavn command."""
 B = """{} with user id:- {} used /vsaavn command."""
 
@@ -16,7 +16,6 @@ B = """{} with user id:- {} used /vsaavn command."""
 
 START_MESSAGE = """
 𝐇𝐞𝐥𝐥𝐨 <a href='tg://settings'>𝐓𝐡𝐚𝐧𝐤 𝐘𝐨𝐮⚡️</a>
-<i>📌ഏതു സോങ് ആണോ വേണ്ടത് അത് സ്പെല്ലിങ് തെറ്റാതെ ഗ്രൂപ്പിൽ ചോദിച്ചാൽ മാത്രമേ കിട്ടുകയുള്ളു...!! \n\n
 
 𝐑𝐮𝐥𝐞𝐬 𝐀𝐧𝐝 𝐁𝐨𝐭 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬 <a href='http://telegra.ph/Minnal-murali-03-06-12'>𝐂𝐥𝐢𝐜𝐤⚡️</a>
 
@@ -34,7 +33,6 @@ START_MESSAGE = """
 
 𝐌𝐝𝐢𝐬𝐤 𝐋𝐢𝐧𝐤 𝐂𝐨𝐧𝐯𝐞𝐫𝐭𝐞𝐫
 𝐌𝐞𝐧𝐭𝐢𝐨𝐧 𝐀𝐧𝐝 𝐓𝐲𝐩𝐞 /𝐦 𝐂𝐨𝐦𝐦𝐚𝐧𝐝 𝐖𝐢𝐭𝐡 𝐘𝐨𝐮𝐫 𝐌𝐝𝐢𝐬𝐤 𝐋𝐢𝐧𝐤
-𝐂𝐡𝐞𝐜𝐤 𝐒𝐜𝐫𝐞𝐞𝐧𝐬𝐡𝐨𝐭 <a href='https://telegra.ph/file/bb74270ecda5e155ff5dc.jpg'>𝐂𝐥𝐢𝐜𝐤 𝐇𝐞𝐫𝐞⚡️</a>
 𝐎𝐰𝐧𝐞𝐫 𝐍𝐚𝐦𝐞 :- {}
 𝐆𝐫𝐨𝐮𝐩 𝐍𝐚𝐦𝐞 :- {}
 """
@@ -71,13 +69,13 @@ async def video(client, message):
     ffile = file.replace("mp3", "mp4")
     os.rename(file, ffile)
     buttons = [[
-        InlineKeyboardButton("JOIN MOVIES", url="https://t.me/NASRANI_UPDATE")
+        InlineKeyboardButton("JOIN MOVIES", url="https://t.me/+e_UqPGvuQ5E5NGU1")
     ]]                           
     await message.reply_video(
-    video=ffile, caption=f"[{sname}]({r['data']['results'][0]['url']}) - from @nasrani_update ",thumb=thumbnail,
+    video=ffile, caption=f"[{sname}]({r['data']['results'][0]['url']}) - from @royal_engfield_bot_updates ",thumb=thumbnail,
     reply_markup=InlineKeyboardMarkup(buttons)
 )
-    await message.reply_text(text="download mp3 song @nasrani_batch_store")
+    await message.reply_text(text="download mp3 song")
     os.remove(ffile)
     os.remove(thumbnail)
     await pak.delete()
@@ -125,7 +123,7 @@ async def song(client, message):
 async def r_message(client, message):
     mention = message.from_user.mention
     buttons = [[
-        InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'http://t.me/nasrani_update')
+        InlineKeyboardButton('𝐉𝐨𝐢𝐧 𝐆𝐫𝐨𝐮𝐩', url=f'https://t.me/+8vZTQtzo0lBmNDY9')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     await message.reply_text(START_MESSAGE.format(message.from_user.mention, message.chat.title),
