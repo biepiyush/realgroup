@@ -322,7 +322,7 @@ async def start(client, message):
         file_id=file_id,
         caption=f_caption,
         reply_markup=InlineKeyboardMarkup( [ [ InlineKeyboardButton('🚸 ᴅᴇʟᴇᴛᴇ', callback_data='close_data') ] ] ),
-        protect_content=True if pre == 'filep' else False),
+        protect_content=True if pre == 'filep' else False,
         )
        
 
