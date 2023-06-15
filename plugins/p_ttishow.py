@@ -40,7 +40,7 @@ async def save_group(bot, message):
         buttons = [[
                     InlineKeyboardButton('ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴩꜱ', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                     ],[
-                    InlineKeyboardButton('📣 Uᴘᴅᴀᴛᴇs', url='https://t.me/+e_UqPGvuQ5E5NGU1'),
+                    InlineKeyboardButton('📣 Uᴘᴅᴀᴛᴇs', url='https://t.me/about_oggy'),
                     InlineKeyboardButton('❓ Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help")
                  ]]
         reply_markup=InlineKeyboardMarkup(buttons)
@@ -62,8 +62,8 @@ async def save_group(bot, message):
                                                  caption=(script.MELCOW_ENG.format(u.mention, message.chat.title)),
                                                  reply_markup=InlineKeyboardMarkup(
                                                                          [[
-                                                                             InlineKeyboardButton('⚡sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ⚡', url='https://t.me/+8vZTQtzo0lBmNDY9'),
-                                                                             InlineKeyboardButton('⚡CHANNEL⚡', url='https://t.me/+e_UqPGvuQ5E5NGU1')
+                                                                             InlineKeyboardButton('⚡sᴜᴘᴘᴏʀᴛ ᴄʜᴀᴛ⚡', url='https://t.me/B_TOWN_22'),
+                                                                             InlineKeyboardButton('⚡CHANNEL⚡', url='https://t.me/about_oggy')
                                                                         ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
