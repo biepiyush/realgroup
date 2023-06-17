@@ -228,6 +228,9 @@ Aᴠᴀɪʟᴀʙʟᴇ ᴄᴏᴍᴍᴀɴᴅs:
 
     LOGO = """BOT STARTED.......🥵"""
     
+    
+    DASH_TXT = """BOT HAVE long uo"""
+    
     EARN_TXT = """<b>
 🎯 ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ OGGY Bots ᴏꜰꜰɪᴄɪᴀʟ❣
 
