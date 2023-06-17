@@ -1348,7 +1348,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
          )
         await query.message.edit_text(
             text=script.DASH_TXT,
-            repky_markup=reply_markup,
+            reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
          )
     elif query.data == "setting_btn":
