@@ -1165,7 +1165,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Hᴇʟᴘ ♻️', callback_data='help'),
             InlineKeyboardButton('Aʙᴏᴜᴛ 📶', callback_data='about')
             ],[
-            InlineKeyboardButton('™️ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ™️', url=CHNL_LNK)
+            InlineKeyboardButton('™️ Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ ™️', callback_data='dash')
         ]] 
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -1335,6 +1335,22 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
+        
+    elif query.data == "dash":
+        buttons = [[
+            InlineKeyboardButton('± ʙᴀᴄᴋ ±', callback_data='start')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await client.edit_message_media(
+            query.message.chat.id,
+            query.message.id,
+            InputMediaPhoto(random.choice(PICS))
+         )
+        await query.message.edit_text(
+            text=script.DASH_TXT,
+            repky_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+         )
     elif query.data == "setting_btn":
         buttons = [[
             InlineKeyboardButton('⇍ ʙᴀᴄᴋ ⇏', callback_data='help')
@@ -1391,7 +1407,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('± Fɪʟᴇ sᴛᴏʀᴇ ±', callback_data='store_file')
         ], [
             InlineKeyboardButton('Cᴏɴɴᴇᴄᴛɪᴏɴ 🫂', callback_data='coct'),
-            InlineKeyboardButton('Exᴛʀᴀ ᴍᴏᴅs 🛸', callback_data='extra')
+            InlineKeyboardButton('Exᴛʀᴀ ᴍᴏᴅs 🛸', callback_data='dash')
                                  
         ], [
             InlineKeyboardButton('Rᴜʟᴇs 🛂', callback_data='rule_btn'),
