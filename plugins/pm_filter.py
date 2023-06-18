@@ -1370,7 +1370,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('y back', callback_data='dash'),
             InlineKeyboardButton('h homr', callback_data='start')
          ]]
-         reply_markup = InlineKeyboardMarkup(button)
+         reply_markup = InlineKeyboardMarkup(buttons)
             await client.edit_message_media(
              query.message.chat.id,
              query.message.id,
@@ -1380,7 +1380,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   text=script.OGGY_TXT,
                  reply_markup=reply_markup,
                  parse_mode=enums.ParseMode.HTML
-              )
+         )
         
     elif query.data == "setting_btn":
         buttons = [[
