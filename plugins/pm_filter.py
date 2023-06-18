@@ -1336,9 +1336,58 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
         
+        elif query.data == "oggy":
+
+        buttons = [[
+            InlineKeyboardButton('🔙 ʙᴀᴄᴋ ', callback_data='dash'),
+
+            InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='start')
+
+        ]]
+
+        reply_markup = InlineKeyboardMarkup(buttons)
+
+        await query.message.edit_text(
+
+            text="● ◌ ◌"
+
+        )
+
+        await query.message.edit_text(
+
+            text="● ● ◌"
+
+        )
+
+        await query.message.edit_text(
+
+            text="● ● ●"
+
+        )
+
+        await client.edit_message_media(
+
+            query.message.chat.id, 
+
+            query.message.id, 
+
+            InputMediaPhoto("https://graph.org/file/ee34b0724874906476b07.jpg")
+
+        )
+
+        await query.message.edit_text(
+
+            text=script.OGGY_TXT,
+
+            reply_markup=reply_markup,
+
+            parse_mode=enums.ParseMode.HTML
+
+         )
+        
     elif query.data == "dash":
         buttons = [[
-            InlineKeyboardButton('😣 ᴄᴏɴɴᴇᴄᴛ ᴛᴏ ꜱʜᴏʀᴛɴᴇʀ', callback_data='extra')
+            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ yᴏᴜʀ ꜱʜᴏʀᴛɴᴇʀ 🔻', callback_data='extra')
         ],[
             InlineKeyboardButton('🔙 ʙᴀᴄᴋ ', callback_data='start'),
             InlineKeyboardButton('♻️ ʜᴇʟᴩ', callback_data='help')
