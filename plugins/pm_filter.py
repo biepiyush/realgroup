@@ -1159,10 +1159,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⛦ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⛦', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ 💎', callback_data='owner_info'),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ 📢', callback_data='help')
+            InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ 👨🏻‍💻', callback_data='owner_info'),
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ 🫂', callback_data='money_bot')
             ],[      
-            InlineKeyboardButton('Hᴇʟᴘ ♻️', callback_data='oggy'),
+            InlineKeyboardButton('Hᴇʟᴘ ♻️', callback_data='help'),
             InlineKeyboardButton('Aʙᴏᴜᴛ 📶', callback_data='about')
             ],[
             InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇy ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='dash')
@@ -1339,7 +1339,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "dash":
         buttons = [[
-            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ yᴏᴜʀ ꜱʜᴏʀᴛɴᴇʀ 🔻', callback_data='data')
+            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ yᴏᴜʀ ꜱʜᴏʀᴛɴᴇʀ 🔻', callback_data='oggy')
         ],[
             InlineKeyboardButton('🔙 ʙᴀᴄᴋ ', callback_data='start'),
             InlineKeyboardButton('♻️ ʜᴇʟᴩ', callback_data='help')
@@ -1367,14 +1367,31 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "oggy":
         buttons = [[
-            InlineKeyboardButton('y back', callback_data='dash'),
-            InlineKeyboardButton('h homr', callback_data='start')
+            InlineKeyboardButton('🔙 ʙᴀᴄᴋ', callback_data='dash'),
+            InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='start')
          ]]
         reply_markup= InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+
+            text="● ◌ ◌"
+
+        )
+
+        await query.message.edit_text(
+
+            text="● ● ◌"
+
+        )
+
+        await query.message.edit_text(
+
+            text="● ● ●"
+
+        )
         await client.edit_message_media(
              query.message.chat.id,
              query.message.id,
-             InputMediaPhoto(random.choice(PICS))     
+             InputMediaPhoto("https://graph.org/file/ee34b0724874906476b07.jpg")     
          )
         await query.message.edit_text(
              text=script.OGGY_TXT,
