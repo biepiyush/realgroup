@@ -1337,7 +1337,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         
         
-    elif query.data == "oggy":
+    elif query.data == "dash":
         buttons = [[
             InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ yᴏᴜʀ ꜱʜᴏʀᴛɴᴇʀ 🔻', callback_data='data')
         ],[
@@ -1365,16 +1365,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
          )
         
-    elif query.data == "dash":
+    elif query.data == "oggy":
         buttons = [[
             InlineKeyboardButton('y back', callback_data='dash'),
             InlineKeyboardButton('h homr', callback_data='start')
          ]]
-         reply_markup = InlineKeyboardMarkup(buttons)
+         reply_markup = InlineKeyboardMarkup(button)
             await client.edit_message_media(
              query.message.chat.id,
              query.message.id,
-             InputMediaPhoto(random.choice(PICS))
+             InputMediaPhoto(random.choice("https://graph.org/file/28b44582b7b08c4a30892.jpg")
          )
              await query.message.edit_text(
                   text=script.OGGY_TXT,
