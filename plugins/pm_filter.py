@@ -1162,7 +1162,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ 💎', callback_data='owner_info'),
             InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ 📢', callback_data='money_bot')
             ],[      
-            InlineKeyboardButton('Hᴇʟᴘ ♻️', callback_data='help'),
+            InlineKeyboardButton('Hᴇʟᴘ ♻️', callback_data='oggy'),
             InlineKeyboardButton('Aʙᴏᴜᴛ 📶', callback_data='about')
             ],[
             InlineKeyboardButton('💰 ᴇᴀʀɴ ᴍᴏɴᴇy ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='dash')
