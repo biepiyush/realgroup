@@ -1367,9 +1367,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "oggy":
         buttons = [[
-            InlineKeyboardButton('😍 back', callback_data='dash')
+            InlineKeyboardButton('y back', callback_data='dash')
+            InlineKeyboardButton('h homr', callback_data='start')
          ]]
-           await client.edit_message_media(
+         reply_markup = InlineKeyboardMarkup(buttons)
+            await client.edit_message_media(
              query.message.chat.id,
              query.message.id,
              InputMediaPhoto(random.choice(PICS))
