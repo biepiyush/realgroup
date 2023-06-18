@@ -1337,13 +1337,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         
         elif query.data == "oggy":
+            buttons = [[
+             InlineKeyboardButton('🔙 ʙᴀᴄᴋ ', callback_data='dash'),
 
-        buttons = [[
-            InlineKeyboardButton('🔙 ʙᴀᴄᴋ ', callback_data='dash'),
-
-            InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='start')
-
-        ]]
+             InlineKeyboardButton('🏡 ʜᴏᴍᴇ', callback_data='start')
+       ]]
 
         reply_markup = InlineKeyboardMarkup(buttons)
 
