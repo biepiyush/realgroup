@@ -1385,7 +1385,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         
     elif query.data == "dash":
         buttons = [[
-            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ yᴏᴜʀ ꜱʜᴏʀᴛɴᴇʀ 🔻', callback_data='extra')
+            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ yᴏᴜʀ ꜱʜᴏʀᴛɴᴇʀ 🔻', callback_data='oggy')
         ],[
             InlineKeyboardButton('🔙 ʙᴀᴄᴋ ', callback_data='start'),
             InlineKeyboardButton('♻️ ʜᴇʟᴩ', callback_data='help')
