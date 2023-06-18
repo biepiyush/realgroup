@@ -1160,7 +1160,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⛦ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⛦', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('Bᴏᴛ Oᴡɴᴇʀ 💎', callback_data='owner_info'),
-            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ 📢', callback_data='money_bot')
+            InlineKeyboardButton('sᴜᴘᴘᴏʀᴛ 📢', callback_data='help')
             ],[      
             InlineKeyboardButton('Hᴇʟᴘ ♻️', callback_data='oggy'),
             InlineKeyboardButton('Aʙᴏᴜᴛ 📶', callback_data='about')
@@ -1369,11 +1369,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('😍 back', callback_data='dash')
          ]]
-         reply_markup = InlineKeyboardMarkup(buttons)
-         await client.edit_message_media(
+           await client.edit_message_media(
              query.message.chat.id,
              query.message.id,
-             InputMediaPhoto(random.choice("https://graph.org/file/28b44582b7b08c4a30892.jpg")
+             InputMediaPhoto(random.choice(PICS))
          )
              await query.message.edit_text(
                   text=script.OGGY_TXT,
