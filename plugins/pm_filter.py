@@ -1337,9 +1337,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
         
         
-    elif query.data == "dash":
+    elif query.data == "oggy":
         buttons = [[
-            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ yᴏᴜʀ ꜱʜᴏʀᴛɴᴇʀ 🔻', callback_data='oggy')
+            InlineKeyboardButton('🔻 ᴄᴏɴɴᴇᴄᴛ yᴏᴜʀ ꜱʜᴏʀᴛɴᴇʀ 🔻', callback_data='data')
         ],[
             InlineKeyboardButton('🔙 ʙᴀᴄᴋ ', callback_data='start'),
             InlineKeyboardButton('♻️ ʜᴇʟᴩ', callback_data='help')
@@ -1365,7 +1365,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
          )
         
-    elif query.data == "oggy":
+    elif query.data == "dash":
         buttons = [[
             InlineKeyboardButton('y back', callback_data='dash'),
             InlineKeyboardButton('h homr', callback_data='start')
