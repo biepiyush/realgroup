@@ -1374,13 +1374,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await client.edit_message_media(
              query.message.chat.id,
              query.message.id,
-             InputMediaPhoto(random.choice("https://graph.org/file/28b44582b7b08c4a30892.jpg")
-        )
+             InputMediaPhoto(random.choice(PICS))     
+         )
         await query.message.edit_text(
              text=script.OGGY_TXT,
              reply_markup=reply_markup,
              parse_mode=enums.ParseMode.HTML
-        )
+         )
         
     elif query.data == "setting_btn":
         buttons = [[
