@@ -1371,12 +1371,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('h homr', callback_data='start')
          ]]
          reply_markup = InlineKeyboardMarkup(buttons)
-            await client.edit_message_media(
+         await client.edit_message_media(
              query.message.chat.id,
              query.message.id,
              InputMediaPhoto(random.choice("https://graph.org/file/28b44582b7b08c4a30892.jpg")
          )
-             await query.message.edit_text(
+         await query.message.edit_text(
                   text=script.OGGY_TXT,
                  reply_markup=reply_markup,
                  parse_mode=enums.ParseMode.HTML
