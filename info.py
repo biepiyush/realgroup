@@ -18,6 +18,7 @@ API_HASH = environ['API_HASH']
 BOT_TOKEN = environ['BOT_TOKEN']
 BOT_NAME = environ['BOT_NAME']
 BOT_USERNAME = environ['BOT_USERNAME']
+OWNER_ID = environ['OWNER_ID']
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
