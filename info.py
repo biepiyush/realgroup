@@ -1,6 +1,8 @@
 import re
 from os import environ
-from Script import script 
+from Script import script
+from telethon import TelegramClient
+
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
@@ -21,7 +23,7 @@ BOT_USERNAME = environ['BOT_USERNAME']
 OWNER_ID = environ['OWNER_ID']
 MONGO_DB_URI = environ['MONGO_DB_URI']
 
-telethn = (API_ID, API_HASH)
+telethn = TelegramClient("info", API_ID, API_HASH)
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
