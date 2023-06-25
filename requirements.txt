@@ -46,3 +46,4 @@ python-decouple
 ffmpeg-python>=0.2.0
 ytthumb
 YoutubeTags
+telethon==1.28.5
