@@ -7,7 +7,6 @@ import requests
 from PIL import Image, ImageDraw, ImageFont
 
 from info import BOT_NAME, BOT_USERNAME, OWNER_ID, telethn
-from plugins.events import register
 
 LOGO_LINKS = [
     "https://telegra.ph/file/d1838efdafce9fe611d0c.jpg",
