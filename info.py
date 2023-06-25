@@ -19,6 +19,7 @@ BOT_TOKEN = environ['BOT_TOKEN']
 BOT_NAME = environ['BOT_NAME']
 BOT_USERNAME = environ['BOT_USERNAME']
 OWNER_ID = environ['OWNER_ID']
+MONGO_DB_URI = environ['MONGO_DB_URI']
 
 telethn = (API_ID, API_HASH)
 
