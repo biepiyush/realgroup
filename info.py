@@ -20,6 +20,8 @@ BOT_NAME = environ['BOT_NAME']
 BOT_USERNAME = environ['BOT_USERNAME']
 OWNER_ID = environ['OWNER_ID']
 
+telethn = TelegramClient("", API_ID, API_HASH)
+
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
