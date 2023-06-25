@@ -23,7 +23,7 @@ BOT_USERNAME = environ['BOT_USERNAME']
 OWNER_ID = environ['OWNER_ID']
 MONGO_DB_URI = environ['MONGO_DB_URI']
 
-telethn = TelegramClient("Fallen", API_ID, API_HASH)
+telethn = TelegramClient("Info", API_ID, API_HASH)
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
